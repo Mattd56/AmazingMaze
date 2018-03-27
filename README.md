@@ -15,20 +15,31 @@ Navigate a maze form start to finish
 > a path cannot go through the same point twice
 
 ## recursive absraction
-When I am asked to solve a maze from start point to end point the recursive abstraction can
-solve the maze from a point next to the start to the end point
+When I am asked to
+  
+  solve a maze from start point to end point 
+
+The recursive abstraction can:
+
+  solve the maze from a point next to the start to the end point
 
 ## base case
 The start point is the end point
 ## English or pseudocode description of algorith
 If 
+
   the start point the end point
+  
 then
-  ??
+
+  We're done! Record the solution
+  
 Else if
+
   the start point is a dead end
+  
 then 
-  ??
+  Propagate backwards
 Else
   Solve the maze from a point next to the start to the end point
 

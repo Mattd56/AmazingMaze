@@ -19,14 +19,14 @@ When I am asked to solve a maze from start point to end point the recursive abst
 solve the maze from a point next to the start to the end point
 
 ## base case
-The start point is directly adjacent to the end point
+The start point is the end point
 ## English or pseudocode description of algorith
 If 
-  the start point is directly adjacent to the end point
+  the start point the end point
 then
   ??
 Else if
-  the start point is directly adjacent to a dead end
+  the start point is a dead end
 then 
   ??
 Else

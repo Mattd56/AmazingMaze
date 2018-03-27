@@ -19,6 +19,18 @@ When I am asked to solve a maze from start point to end point the recursive abst
 solve the maze from a point next to the start to the end point
 
 ## base case
-## English or pseudocode description of algorithm
+The start point is directly adjacent to the end point
+## English or pseudocode description of algorith
+If 
+  the start point is directly adjacent to the end point
+then
+  ??
+Else if
+  the start point is directly adjacent to a dead end
+then 
+  ??
+Else
+  Solve the maze from a point next to the start to the end point
+
 ## class(es), with fields and methods
 ## version *n* wish list

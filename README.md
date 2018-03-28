@@ -3,11 +3,11 @@ Matthew Deutsch
 
 Ivan Galakhov
 
-## statement of problem
+## Statement of problem
 Returns the Boolean value of the statement “the maze is navigable, having a legal
 travel path that is continuous from start point to existing treasure”
 Navigate a maze form start to finish
-### legal means:
+### 'Legal' means:
 > don’t cross the walls
 
 > right-angle turns only
@@ -24,24 +24,23 @@ The recursive abstraction can:
   solve the maze from a point next to the start to the end point
 
 ## base case
-The start point is the end point
+
+The start point is the end point.
+
 ## English or pseudocode description of algorith
-If 
-
-  the start point the end point
+define solveMaze(start, end):
   
-then
-
-  We're done! Record the solution
+  if(start == end):
+     
+     return True //the maze is solved
+    
+  foreach(legal neighbor of start):
   
-Else if
-
-  the start point is a dead end
+    if(solveMaze(neighbor, end)):
+    
+      return True
   
-then 
-  Propagate backwards
-Else
-  Solve the maze from a point next to the start to the end point
+  return False
 
 ## class(es), with fields and methods
 ## version *n* wish list

@@ -6,7 +6,13 @@ Ivan Galakhov
 ## Statement of problem
 Returns the Boolean value of the statement “the maze is navigable, having a legal
 travel path that is continuous from start point to existing treasure”
-Navigate a maze form start to finish
+
+AKA
+
+False -> if its not possible to solve the maze
+
+True -> if it is possible to solve the maze
+
 ### 'Legal' means:
 > don’t cross the walls
 
@@ -26,6 +32,8 @@ The recursive abstraction can:
 ## base case
 
 The start point is the end point.
+
+The start point has no legal moves. 
 
 ## English or pseudocode description of algorith
 define solveMaze(start, end):

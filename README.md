@@ -41,6 +41,10 @@ define solveMaze(start, end):
   if(start == end):
      
      return True //the maze is solved
+     
+  if(start has no legal moves):
+  
+     return False //there are no solutions
     
   foreach(legal neighbor of start):
   

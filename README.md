@@ -36,9 +36,9 @@ The start point is the end point.
 The start point has no legal moves. 
 
 ## English or pseudocode description of algorith
-define solveMaze(start, end):
+define solveMaze(start, treasure):
   
-  if(start == end):
+  if(start == treasure):
      
      return True //the maze is solved
      

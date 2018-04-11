@@ -36,6 +36,7 @@ The start point is the end point.
 The start point has no legal moves. 
 
 ## English or pseudocode description of algorith
+```
 define solveMaze(start, treasure):
   
   if(start == treasure):
@@ -46,13 +47,14 @@ define solveMaze(start, treasure):
   
      return False //there are no solutions
     
-  foreach(legal neighbor of start):
+  foreach(neighbor of start):
   
     if(solveMaze(neighbor, end)):
     
       return True
   
   return False
+```
 
 ## class(es), with fields and methods
 ## version *n* wish list

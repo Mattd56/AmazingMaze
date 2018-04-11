@@ -23,11 +23,11 @@ True -> if it is possible to solve the maze
 ## recursive absraction
 When I am asked to
   
-  solve a maze from start point to end point 
+  solve a maze from start point to treasure that may or may not exist
 
 The recursive abstraction can:
 
-  solve the maze from a point next to the start to the end point
+  solve the maze from a point next to the start to treasure that may or may not exist
 
 ## base case
 

@@ -33,7 +33,7 @@ The recursive abstraction can:
 
 The start point is the end point.
 
-The start point has no legal moves. 
+The start point is on a wall.
 
 ## English or pseudocode description of algorith
 ```

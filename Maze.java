@@ -80,7 +80,9 @@ public class Maze {
                           // + ", " +           explorerPosition.file);
     }
 
-
+    public static int[] getMoves(){
+      return new int[]{NORTH, SOUTH, EAST, WEST};
+    }
     /**
       Copy-construct an instance.
       Deep copy of all instance fields.
@@ -133,7 +135,9 @@ public class Maze {
         return   result + aboveAndBelow;
     }
 
-
+    public static int[] getDirections(){
+      return new int[]{NORTH, EAST, SOUTH, WEST};
+    }
     /**
       Move the Explorer a step in the indicated direction.
       Attempting to position the explorer outside the maze means
@@ -209,8 +213,8 @@ public class Maze {
             rank += ranks;
             file += files;
 
-            // // for debugging: report resulting position
-            // System.out.println( "sum: " + rank + " / " + rankCount
+            //for debugging: report resulting position
+            //System.out.println( "sum: " + rank + " / " + rankCount
                               // + ", " +    file + " / " + maze[ rank].length );
 
             // still in bounds?

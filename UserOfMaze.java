@@ -157,10 +157,6 @@ public class UserOfMaze {
         Maze snapshot;
         snapshot = new Maze(candidate);
 
-        throw new java.lang.RuntimeException(
-            "Write code to take a snapshot of @candidate. "
-          + "Then, in @candidate, have the explorer go() out of the maze.");
-
         candidate.go(2);
 
         System.out.println(

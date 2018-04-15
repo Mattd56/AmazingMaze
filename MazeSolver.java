@@ -1,14 +1,10 @@
 /**
   Input maze object and
-
-
   solve ()
   Returns the Boolean value of the statement "the maze is navigable, having a legal travel path that is continuous
   from start point to existing treasure"
   AKA
-
   False -> if its not possible to solve the maze
-
   True -> if it is possible to solve the maze
 **/
 public class MazeSolver {
@@ -36,10 +32,11 @@ public class MazeSolver {
         //solve the currently loaded maze
         //base case 1
         if(curLoaded.explorerIsOnA() == Maze.TREASURE){
+          System.out.println(curLoaded);
           return true; //we are done!
         }
         //base case 2
-        if(curLoaded.explorerIsOnA() == Maze.WALL){
+        if(curLoaded.explorerIsOnA() == Maze.WALL || curLoaded.explorerIsOnA() == Maze.PATH){
           return false; //no
         }
 
@@ -47,7 +44,7 @@ public class MazeSolver {
         Maze snapshot = new Maze(curLoaded);
 
         for(int direction : Maze.getMoves()){
-          curLoaded.dropA(Maze.WALL);
+          curLoaded.dropA(Maze.PATH);
           curLoaded.go(direction);
           if(solve()){
             return true;

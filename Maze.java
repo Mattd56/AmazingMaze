@@ -1,11 +1,9 @@
 /**
   Represent a Maze with an Explorer in it
-
   A "MazeTerminal" is...
     o  a wall element; or
     o  a treasure; or
     o  a stepping stone.
-
   A "Maze" is...
     o  a MazeTerminal; or
     o  a stepping stone with a Maze as any of its 4 neighbors
@@ -19,6 +17,7 @@ public class Maze {
     public final static int TREASURE = 0;
     public final static int WALL = 1;
     public final static int STEPPING_STONE = 2;
+    public final static int PATH = 3;
 
     // directions that can be searched
     public final static int EAST =  1;
@@ -106,8 +105,8 @@ public class Maze {
         /* characters that represent elements of the maze,
            indexed by the numbers used to represent elements
           */
-        final String outChar = "0 *";  // no explorer here
-        final String exOnTop = "!Ee";  /* explorer on top of
+        final String outChar = "0 *x";  // no explorer here
+        final String exOnTop = "!Eex";  /* explorer on top of
            treasure, wall, stepping stone, etc. */
 
         // build string for top and bottom separators
@@ -142,7 +141,6 @@ public class Maze {
       Move the Explorer a step in the indicated direction.
       Attempting to position the explorer outside the maze means
       it has no position.
-
       @precondition: explorer starts in a valid position
      */
     public void go( int direction)  {

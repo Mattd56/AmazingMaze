@@ -58,3 +58,5 @@ define solveMaze(start, treasure):
 
 ## class(es), with fields and methods
 ## version *n* wish list
+## v1
+- the solved maze now shows the path the explorer should take

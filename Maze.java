@@ -46,8 +46,13 @@ public class Maze {
            we ever allow non-rectangular mazes  */
         maze = new int[ MAX_RANKS][];
 
-        Scanner sc = new Scanner( new java.io.File( sourceFilename));
-        sc.useDelimiter("");  // Whitespaces are data, not delimiters.
+        try {
+          Scanner sc = new Scanner( new java.io.File( sourceFilename));
+          sc.useDelimiter("");  // Whitespaces are data, not delimiters.
+        } catch (Throable ex) {
+          maze[0] = new int[]{WALL};
+          rankCount = 1;
+        }
 
         // process the maze file
         while( sc.hasNextLine() ) {

@@ -29,6 +29,10 @@ public class MazeSolver {
      **/
     public boolean solve() {
         //CHECK that there is a maze loaded (important)
+        for(int i = 0; i < 1000; i++){
+          System.out.print("\b");
+        }
+        System.out.println(curLoaded);
         if(curLoaded == null){
           throw new RuntimeException("The MazeSolver class" + this + " does not have any maze loaded");
         }
